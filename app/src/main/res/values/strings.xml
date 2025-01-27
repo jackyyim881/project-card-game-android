@@ -1,0 +1,42 @@
+<resources>
+  <string name="app_name">CardGame2</string>
+  <string name="notes">NOTES</string>
+  <string name="title_activity_note_detail">NoteDetailActivity</string>
+  <string name="save">SAVE</string>
+  <string name="edit">edit\n</string>
+  <string name="title">title</string>
+  <string name="start_typing">start_typing</string>
+  <string name="title_activity_note_cell">note_cell</string>
+
+
+
+
+  <!-- Settings Categories -->
+  <string name="general_settings">General</string>
+  <string name="display_settings">Display</string>
+  <string name="advanced_settings">Advanced</string>
+
+  <!-- Language Settings -->
+  <string name="language">Language</string>
+  <string name="enable_disable_notifications">Enable/disable push notifications</string>
+
+  <!-- Notification Settings -->
+  <string name="notifications">Notifications</string>
+
+  <!-- Display Settings -->
+  <string name="dark_mode">Dark Mode</string>
+  <string name="enable_dark_theme">Enable dark theme</string>
+  <string name="text_size">Text Size</string>
+
+  <!-- Advanced Settings -->
+  <string name="reset_to_default">Reset to Default</string>
+  <string name="reset_all_settings">Reset all settings to default values</string>
+  <string name="terms_of_service">Terms of Service</string>
+  <string name="privacy_policy">Privacy Policy</string>
+
+  <!-- Common -->
+  <string name="ok">OK</string>
+  <string name="cancel">Cancel</string>
+  <string name="reset_confirmation_title">Reset Settings</string>
+  <string name="reset_confirmation_message">Are you sure you want to reset all settings to default values?</string>
+</resources>

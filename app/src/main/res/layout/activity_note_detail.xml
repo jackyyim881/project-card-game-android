@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+  <androidx.appcompat.widget.Toolbar
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:minHeight="?actionBarSize"
+      android:theme="?actionBarTheme"
+      android:background="@color/darkGray">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:text="@string/notes"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textSize="35sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/darkGray"
+        android:textStyle="bold"
+        android:layout_gravity="end"
+        android:onClick="newNote"
+        tools:ignore="OnClick"
+        />
+
+  </androidx.appcompat.widget.Toolbar>
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp"
+      app:counterEnabled="true"
+      app:counterMaxLength="100"
+      app:boxBackgroundMode="none"
+      app:errorEnabled="true">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:inputType="textCapSentences"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"/>
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <!-- Note Content Input -->
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:boxBackgroundMode="none"
+      android:layout_marginTop="8dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_note_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/start_typing"
+        android:textSize="18sp"
+        android:gravity="top"
+        android:inputType="textMultiLine|textCapSentences"
+        android:minLines="10"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:padding="8dp"/>
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

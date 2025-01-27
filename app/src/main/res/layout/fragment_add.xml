@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/darkGray">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="8dp">
+
+    <!-- Title Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:endIconMode="clear_text"
+        android:textColorHint="@color/white">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/title_input"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Title"
+          android:textColor="@color/white"
+          android:textSize="20sp"
+          android:maxLines="1"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Content Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:hintTextColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        android:textColorHint="@color/white">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/content_input"
+          android:layout_width="match_parent"
+          android:layout_height="150dp"
+          android:hint="Note Content"
+          android:textColor="@color/white"
+          android:textSize="16sp"
+          android:gravity="start"
+          android:inputType="textMultiLine"
+          android:maxLines="8"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Save Note"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/darkGray"
+        android:elevation="4dp"/>
+
+  </LinearLayout>
+</ScrollView>

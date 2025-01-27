@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Language options -->
+  <array name="languages">
+    <item>English</item>
+    <item>Español</item>
+    <item>Français</item>
+    <item>Deutsch</item>
+    <item>日本語</item>
+  </array>
+
+  <array name="language_codes">
+    <item>en</item>
+    <item>es</item>
+    <item>fr</item>
+    <item>de</item>
+    <item>ja</item>
+  </array>
+
+  <!-- Text size options -->
+  <array name="text_sizes">
+    <item>Small</item>
+    <item>Medium</item>
+    <item>Large</item>
+  </array>
+
+  <array name="text_size_values">
+    <item>small</item>
+    <item>medium</item>
+    <item>large</item>
+  </array>
+</resources>

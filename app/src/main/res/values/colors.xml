@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/colors.xml -->
+<resources>
+  <!-- Primary Color Palette -->
+  <color name="primary">#6750A4</color>  <!-- Material Purple 700 -->
+  <color name="primary_variant">#7F67BE</color>
+  <color name="secondary">#FFB800</color>  <!-- Material Amber 600 -->
+  <color name="secondary_variant">#FFD54F</color>
+
+  <!-- Surface & Background Colors -->
+  <color name="surface">#FFFFFF</color>
+  <color name="background">#F5F5F5</color>
+  <color name="darkGray">#212121</color>  <!-- For dark toolbars -->
+
+  <!-- Text Colors -->
+  <color name="text_primary">#1A1A1A</color>  <!-- 87% opacity black -->
+  <color name="text_secondary">#757575</color>  <!-- 60% opacity black -->
+  <color name="text_on_primary">#FFFFFF</color>  <!-- White text on primary -->
+  <color name="text_on_dark">#FFFFFF</color>
+  <color name="cardBackground">#2D2D2D</color>
+  <color name="playBackground">#1E1E1E</color>
+  <color name="profileBackground">#3D3D3D</color>
+  <color name="settingsBackground">#4D4D4D</color>
+  <color name="rulesBackground">#5D5D5D</color>
+  <!-- Status Colors -->
+  <color name="success">#4CAF50</color>  <!-- Material Green 500 -->
+  <color name="error">#B00020</color>    <!-- Material Red 700 -->
+  <color name="warning">#FFC107</color>  <!-- Material Amber 500 -->
+
+  <!-- UI Elements -->
+  <color name="divider">#E0E0E0</color>  <!-- Light divider -->
+  <color name="chip_background">#EEEEEE</color>
+  <color name="chip_stroke">#BDBDBD</color>
+  <color name="ripple_color">#1F000000</color>  <!-- Black 12% opacity -->
+
+  <!-- Icon Colors -->
+  <color name="icon_active">#757575</color>
+  <color name="icon_inactive">#9E9E9E</color>
+
+
+  <color name="rarity_common">#757575</color>
+  <color name="rarity_uncommon">#4CAF50</color>
+  <color name="rarity_rare">#2196F3</color>
+  <color name="rarity_epic">#9C27B0</color>
+  <color name="rarity_legendary">#FF9800</color>
+  <color name="rarity_mythic">#FFD700</color>
+
+  <!-- Standard Material Colors -->
+  <color name="white">#FFFFFF</color>
+  <color name="black">#000000</color>
+  <color name="gray">#9E9E9E</color>  <!-- Material Grey 500 -->
+</resources>
