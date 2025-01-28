@@ -4,6 +4,8 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class CardItem implements Parcelable {
+
+    private int id; // Added ID field
     private String name;
     private String type;
     private int hp;
@@ -12,8 +14,10 @@ public class CardItem implements Parcelable {
     private int backgroundRes;
     private int rarityRes;
 
-    public CardItem(String name, String type, int hp, int attack, int imageRes,
+    // Updated constructor with ID field
+    public CardItem(int id, String name, String type, int hp, int attack, int imageRes,
         int backgroundRes, int rarityRes) {
+        this.id = id; // Initialize the id
         this.name = name;
         this.type = type;
         this.hp = hp;
@@ -23,7 +27,12 @@ public class CardItem implements Parcelable {
         this.rarityRes = rarityRes;
     }
 
-    // Add getter methods
+    // Getter for ID
+    public int getId() {
+        return id;
+    }
+
+    // Getter methods for other fields
     public String getName() {
         return name;
     }
@@ -54,6 +63,7 @@ public class CardItem implements Parcelable {
 
     // Parcelable implementation remains the same
     protected CardItem(Parcel in) {
+        id = in.readInt();  // Read ID from parcel
         name = in.readString();
         type = in.readString();
         hp = in.readInt();
@@ -82,6 +92,7 @@ public class CardItem implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(id); // Write ID to parcel
         dest.writeString(name);
         dest.writeString(type);
         dest.writeInt(hp);

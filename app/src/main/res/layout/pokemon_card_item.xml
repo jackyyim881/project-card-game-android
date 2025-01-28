@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/card_background_gradient"
+    android:layout_marginBottom="10dp"
+    android:gravity="center"
+    > <!-- Center all child views horizontally -->
+
+  <!-- Card Image -->
+  <androidx.appcompat.widget.AppCompatImageView
+      android:id="@+id/card_image"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_gravity="center" /> <!-- Center the image horizontally -->
+
+  <!-- Card Name -->
+  <TextView
+      android:id="@+id/card_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/pikachu"
+      android:textColor="@color/white"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      android:layout_marginTop="8dp"
+  android:gravity="center" /> <!-- Center the text horizontally -->
+
+  <!-- Card Attack -->
+  <TextView
+      android:id="@+id/card_attack"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/attack_50"
+      android:textSize="14sp"
+      android:textColor="@color/secondary_text_color"
+      android:layout_marginTop="4dp"
+  android:gravity="center" /> <!-- Center the text horizontally -->
+
+  <!-- Card HP -->
+  <TextView
+      android:id="@+id/card_hp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/hp_60"
+      android:textSize="14sp"
+      android:textColor="@color/secondary_text_color"
+      android:layout_marginTop="4dp"
+  android:gravity="center" /> <!-- Center the text horizontally -->
+
+</LinearLayout>

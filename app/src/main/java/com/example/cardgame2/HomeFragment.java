@@ -37,13 +37,13 @@ public class HomeFragment extends Fragment {
 
         List<CardItem> cards = new ArrayList<>();
         // Added HP, Attack, Rarity, and Gradient
-        cards.add(new CardItem("Charizard", "Fire", 180, 120, R.drawable.charizard,
+        cards.add(new CardItem(1,"Charizard", "Fire", 180, 120, R.drawable.charizard,
             R.drawable.fire_gradient, R.drawable.rarity_epic));
-        cards.add(new CardItem("Blastoise", "Water", 160, 110, R.drawable.blastoise,
+        cards.add(new CardItem(2,"Blastoise", "Water", 160, 110, R.drawable.blastoise,
             R.drawable.water_gradient, R.drawable.rarity_rare));
-        cards.add(new CardItem("Venusaur", "Grass", 170, 115, R.drawable.venusaur,
+        cards.add(new CardItem(3,"Venusaur", "Grass", 170, 115, R.drawable.venusaur,
             R.drawable.grass_gradient, R.drawable.rarity_common));
-        cards.add(new CardItem("Pikachu", "Electric", 140, 90, R.drawable.pikachu,
+        cards.add(new CardItem(4, "Pikachu", "Electric", 140, 90, R.drawable.pikachu,
             R.drawable.electric_gradient, R.drawable.rarity_common));
 
         CardAdapter adapter = new CardAdapter(cards);

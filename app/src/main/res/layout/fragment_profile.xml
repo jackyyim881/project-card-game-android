@@ -68,88 +68,98 @@
 
   <!-- Statistics Section -->
   <LinearLayout
-      android:layout_width="match_parent"
+      android:id="@+id/stats_section"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_below="@id/experience_text"
+  android:layout_marginTop="32dp"
+  android:orientation="horizontal"
+  android:weightSum="3">
+
+  <!-- Wins -->
+  <LinearLayout
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_below="@id/experience_text"
-      android:layout_marginTop="32dp"
-      android:orientation="horizontal"
-      android:weightSum="3">
+      android:layout_weight="1"
+      android:orientation="vertical"
+      android:gravity="center">
 
-    <!-- Wins -->
-    <LinearLayout
-        android:layout_width="0dp"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:text="Wins"
+        android:textSize="16sp"
+        android:textColor="@color/primary_text_color"/>
 
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Wins"
-          android:textSize="16sp"
-          android:textColor="@color/primary_text_color"/>
-
-      <TextView
-          android:id="@+id/wins_count"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="150"
-          android:textSize="20sp"
-          android:textColor="@color/secondary_text_color"
-          android:textStyle="bold"/>
-    </LinearLayout>
-
-    <!-- Losses -->
-    <LinearLayout
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/wins_count"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:gravity="center">
-
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Losses"
-          android:textSize="16sp"
-          android:textColor="@color/primary_text_color"/>
-
-      <TextView
-          android:id="@+id/losses_count"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="50"
-          android:textSize="20sp"
-          android:textColor="@color/secondary_text_color"
-          android:textStyle="bold"/>
-    </LinearLayout>
-
-    <!-- Win Rate -->
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:gravity="center">
-
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Win Rate"
-          android:textSize="16sp"
-          android:textColor="@color/primary_text_color"/>
-
-      <TextView
-          android:id="@+id/win_rate"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="75%"
-          android:textSize="20sp"
-          android:textColor="@color/secondary_text_color"
-          android:textStyle="bold"/>
-    </LinearLayout>
+        android:text="150"
+        android:textSize="20sp"
+        android:textColor="@color/secondary_text_color"
+        android:textStyle="bold"/>
   </LinearLayout>
+
+  <!-- Losses -->
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical"
+      android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Losses"
+        android:textSize="16sp"
+        android:textColor="@color/primary_text_color"/>
+
+    <TextView
+        android:id="@+id/losses_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50"
+        android:textSize="20sp"
+        android:textColor="@color/secondary_text_color"
+        android:textStyle="bold"/>
+  </LinearLayout>
+
+  <!-- Win Rate -->
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical"
+      android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Win Rate"
+        android:textSize="16sp"
+        android:textColor="@color/primary_text_color"/>
+
+    <TextView
+        android:id="@+id/win_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="75%"
+        android:textSize="20sp"
+        android:textColor="@color/secondary_text_color"
+        android:textStyle="bold"/>
+  </LinearLayout>
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recycler_view_pokemon"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/stats_section"
+      android:layout_above="@id/action_button"
+      android:paddingTop="16dp"
+      android:paddingBottom="16dp"/>
+
+  <!-- Button at the Bottom -->
   <Button
       android:id="@+id/action_button"
       android:layout_width="match_parent"
@@ -157,12 +167,11 @@
       android:text="Stores"
       android:textStyle="bold"
       android:layout_alignParentBottom="true"
-      android:layout_marginTop="16dp"
       android:textColor="@color/blue_text"
       android:background="@drawable/game_button_background"
       android:elevation="6dp"/>
-
-
-  <!-- Button at the Bottom -->
-
+  </LinearLayout>
 </RelativeLayout>
+
+    <!-- RecyclerView for Pokémon Cards -->
+

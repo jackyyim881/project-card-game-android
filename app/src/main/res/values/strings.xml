@@ -8,7 +8,9 @@
   <string name="start_typing">start_typing</string>
   <string name="title_activity_note_cell">note_cell</string>
 
-
+  <string name="level_format">Level %d</string>
+  <string name="xp_format">%d/%d XP</string>
+  <string name="percentage_format">%.0f%%</string>
 
 
   <!-- Settings Categories -->
@@ -42,4 +44,7 @@
   <string name="mana_5_10">Mana: 5/10</string>
   <string name="turn_time_30s">Turn Time: 30s</string>
   <string name="end_turn">End Turn</string>
+  <string name="pikachu">Pikachu</string>
+  <string name="attack_50">Attack: 50</string>
+  <string name="hp_60">HP: 60</string>
 </resources>

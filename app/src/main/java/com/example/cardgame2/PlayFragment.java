@@ -62,9 +62,9 @@ public class PlayFragment extends Fragment {
 
     private void loadSampleCards() {
         // Add sample Pokémon cards to player and opponent hands
-        playerHand.add(new CardItem("Pikachu", "Electric", 70, 40, R.drawable.pikachu, R.drawable.pokemon_card_bg_yellow, R.drawable.rarity_common));
-        playerHand.add(new CardItem("Charizard", "Fire", 120, 80, R.drawable.charizard, R.drawable.pokemon_card_bg_red, R.drawable.rarity_rare));
-        opponentHand.add(new CardItem("Blastoise", "Water", 130, 70, R.drawable.blastoise, R.drawable.pokemon_card_bg_blue, R.drawable.rarity_rare));
+        playerHand.add(new CardItem(1,"Pikachu", "Electric", 70, 40, R.drawable.pikachu, R.drawable.pokemon_card_bg_yellow, R.drawable.rarity_common));
+        playerHand.add(new CardItem(2,"Charizard", "Fire", 120, 80, R.drawable.charizard, R.drawable.pokemon_card_bg_red, R.drawable.rarity_rare));
+        opponentHand.add(new CardItem(3,"Blastoise", "Water", 130, 70, R.drawable.blastoise, R.drawable.pokemon_card_bg_blue, R.drawable.rarity_rare));
     }
 
     private void displayPlayerHand() {
