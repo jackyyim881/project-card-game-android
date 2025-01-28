@@ -1,16 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/playBackground">
+    android:background="@drawable/game_board_background">
 
-  <!-- Add your game board elements here -->
-  <Button
-      android:id="@+id/draw_button"
+  <!-- Opponent Area -->
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/opponent_area"
+      android:layout_width="match_parent"
+      android:layout_height="120dp"
+      android:padding="8dp"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <!-- Play Area -->
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/play_area"
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:background="@drawable/play_zone_bg"
+      app:layout_constraintTop_toBottomOf="@id/opponent_area"
+      app:layout_constraintBottom_toTopOf="@id/player_area" />
+
+  <!-- Player Area -->
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/player_area"
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      android:padding="8dp"
+      app:layout_constraintBottom_toBottomOf="parent" />
+
+  <!-- Status Panel -->
+  <LinearLayout
+      android:layout_width="240dp"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:background="@drawable/status_panel_bg"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/tv_player_health"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Health: 100"
+        android:textColor="@color/gold_text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_mana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mana: 5/10"
+        android:textColor="@color/blue_text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_turn_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Turn Time: 30s"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+  </LinearLayout>
+
+  <!-- Action Buttons -->
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/btn_end_turn"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Draw Card"
-      android:layout_centerInParent="true"/>
-
-</RelativeLayout>
+      android:text="End Turn"
+      style="@style/GameButtonStyle"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

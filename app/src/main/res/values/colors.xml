@@ -49,4 +49,20 @@
   <color name="white">#FFFFFF</color>
   <color name="black">#000000</color>
   <color name="gray">#9E9E9E</color>  <!-- Material Grey 500 -->
+
+  <color name="game_button_disabled_text">#808080</color> <!-- RGB(128, 128, 128) Gray -->
+  <color name="game_button_text">#FFD700</color>  <!-- RGB(255, 215, 0) -->
+
+  <!-- Optional alternative colors -->
+  <color name="game_button_alt_text">#00FFFF</color>     <!-- RGB(0, 255, 255) Cyan -->
+  <color name="pokemon_card_text">#FFD700</color> <!-- Example: Gold color -->
+  <color name="game_button_background">#FF5722</color>
+
+  <color name="background_color">#F5F5F5</color>
+  <color name="primary_text_color">#333333</color>
+  <color name="secondary_text_color">#666666</color>
+  <color name="profile_background_color">#FFFFFF</color>
+  <color name="profile_stroke_color">#DDDDDD</color>
+  <color name="progress_background_color">#E0E0E0</color>
+  <color name="progress_foreground_color">#4CAF50</color>
 </resources>

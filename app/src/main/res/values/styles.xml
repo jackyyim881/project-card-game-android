@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!-- res/values/styles.xml -->
+  <style name="GameButtonStyle" parent="Widget.MaterialComponents.Button">
+    <!-- Text appearance -->
+    <item name="android:textColor">@color/gold_text</item> <!-- Gold text -->
+    <item name="android:textSize">14sp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:fontFamily">sans-serif-condensed</item>
+    <item name="android:letterSpacing">0.03</item> <!-- Slightly spaced letters -->
+    <item name="android:shadowColor">#80000000</item> <!-- Text shadow -->
+    <item name="android:shadowDx">1</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:shadowRadius">2</item>
+
+    <!-- Button shape -->
+    <item name="shapeAppearance">@style/GameButtonShape</item>
+
+    <!-- Background tint -->
+    <item name="backgroundTint">@color/game_button_alt_text</item>
+
+    <!-- States -->
+    <item name="android:textColor" tools:ignore="DuplicateDefinition">@color/gold_text</item>
+    <item name="android:textColorHint">@color/game_button_disabled_text</item>
+  </style>
+
+  <style name="GameButtonShape">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">8dp</item>
+  </style>
+</resources>

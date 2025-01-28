@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- Base Gradient -->
+  <item>
+    <shape android:shape="rectangle">
+      <gradient
+          android:startColor="#0A0A0A"
+          android:endColor="#1A1A1A"
+          android:angle="135" /> <!-- Diagonal gradient -->
+    </shape>
+  </item>
+
+  <!-- Subtle Texture Overlay -->
+  <item>
+    <bitmap
+        android:src="@drawable/game_board_texture"
+        android:tileMode="repeat"
+        android:alpha="0.1" /> <!-- Low opacity -->
+  </item>
+
+  <!-- Border (Optional) -->
+  <item>
+    <shape android:shape="rectangle">
+      <stroke android:width="2dp" android:color="#333333" /> <!-- Dark border -->
+    </shape>
+  </item>
+</layer-list>

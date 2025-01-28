@@ -1,17 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp"
-    android:background="@color/profileBackground">
+    android:background="@color/background_color">
 
+  <!-- Profile Picture -->
+  <ImageView
+      android:id="@+id/profile_image"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/profile_placeholder"
+      android:contentDescription="profile_image_desc"
+      android:elevation="8dp"
+      android:background="@drawable/circle_background"/>
+
+  <!-- Player Name -->
   <TextView
+      android:id="@+id/player_name"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Player Profile"
+      android:layout_below="@id/profile_image"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="16dp"
+      android:text="Player 1"
       android:textSize="24sp"
-      android:textColor="@color/white"/>
+      android:textColor="@color/primary_text_color"
+      android:textStyle="bold"/>
 
-</LinearLayout>
+  <!-- Player Level -->
+  <TextView
+      android:id="@+id/player_level"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/player_name"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="8dp"
+      android:text="Level 10"
+      android:textSize="18sp"
+      android:textColor="@color/secondary_text_color"/>
+
+  <!-- Experience Progress Bar -->
+  <ProgressBar
+      android:id="@+id/experience_progress"
+      style="?android:attr/progressBarStyleHorizontal"
+      android:layout_width="200dp"
+      android:layout_height="10dp"
+      android:layout_below="@id/player_level"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="16dp"
+      android:progress="50"
+      android:max="100"
+      android:progressDrawable="@drawable/custom_progress_bar"/>
+
+  <!-- Experience Text -->
+  <TextView
+      android:id="@+id/experience_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/experience_progress"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="8dp"
+      android:text="500/1000 XP"
+      android:textSize="14sp"
+      android:textColor="@color/secondary_text_color"/>
+
+  <!-- Statistics Section -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/experience_text"
+      android:layout_marginTop="32dp"
+      android:orientation="horizontal"
+      android:weightSum="3">
+
+    <!-- Wins -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Wins"
+          android:textSize="16sp"
+          android:textColor="@color/primary_text_color"/>
+
+      <TextView
+          android:id="@+id/wins_count"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="150"
+          android:textSize="20sp"
+          android:textColor="@color/secondary_text_color"
+          android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Losses -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Losses"
+          android:textSize="16sp"
+          android:textColor="@color/primary_text_color"/>
+
+      <TextView
+          android:id="@+id/losses_count"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="50"
+          android:textSize="20sp"
+          android:textColor="@color/secondary_text_color"
+          android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Win Rate -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Win Rate"
+          android:textSize="16sp"
+          android:textColor="@color/primary_text_color"/>
+
+      <TextView
+          android:id="@+id/win_rate"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="75%"
+          android:textSize="20sp"
+          android:textColor="@color/secondary_text_color"
+          android:textStyle="bold"/>
+    </LinearLayout>
+  </LinearLayout>
+  <Button
+      android:id="@+id/action_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Stores"
+      android:textStyle="bold"
+      android:layout_alignParentBottom="true"
+      android:layout_marginTop="16dp"
+      android:textColor="@color/blue_text"
+      android:background="@drawable/game_button_background"
+      android:elevation="6dp"/>
+
+
+  <!-- Button at the Bottom -->
+
+</RelativeLayout>

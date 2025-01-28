@@ -39,4 +39,7 @@
   <string name="cancel">Cancel</string>
   <string name="reset_confirmation_title">Reset Settings</string>
   <string name="reset_confirmation_message">Are you sure you want to reset all settings to default values?</string>
+  <string name="mana_5_10">Mana: 5/10</string>
+  <string name="turn_time_30s">Turn Time: 30s</string>
+  <string name="end_turn">End Turn</string>
 </resources>

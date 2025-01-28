@@ -50,26 +50,6 @@ public class HomeFragment extends Fragment {
         recyclerView.setAdapter(adapter);
     }
 
-    //private static class CardItem {
-    //    String name;
-    //    String type;
-    //    int hp;
-    //    int attack;
-    //    int imageRes;
-    //    int backgroundRes;
-    //    int rarityRes;
-    //
-    //    CardItem(String name, String type, int hp, int attack, int imageRes,
-    //        int backgroundRes, int rarityRes) {
-    //        this.name = name;
-    //        this.type = type;
-    //        this.hp = hp;
-    //        this.attack = attack;
-    //        this.imageRes = imageRes;
-    //        this.backgroundRes = backgroundRes;
-    //        this.rarityRes = rarityRes;
-    //    }
-    //}
 
     private class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
 
